@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="9dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/user" />
+
+        <TextView
+            android:id="@+id/userNameOrders"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/btnCart"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_input"
+            android:padding="3dp"
+            app:srcCompat="@drawable/cart" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="@color/light_green"
+        android:padding="10dp"
+        android:text="@string/custom_pizza"
+        android:textSize="18sp"
+        app:cornerRadius="50dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="55dp"
+        android:text="@string/choose_pizza"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/menuView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp" />
+
+</LinearLayout>

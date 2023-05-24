@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/layout_pizza_container"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/btnQuantity"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="@color/dark_blue"
+        android:text="x1"
+        android:textSize="16sp"
+        app:cornerRadius="50dp" />
+
+    <TextView
+        android:id="@+id/displayPizza"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="20dp"
+        android:text="Pepperoni"
+        android:textColor="@color/dark_blue"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/displayPrice"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="$14.99"
+        android:textAlignment="textEnd"
+        android:textColor="@color/dark_blue"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+</LinearLayout>
